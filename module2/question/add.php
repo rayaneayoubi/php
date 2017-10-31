@@ -43,20 +43,20 @@ if($result){
     <input type="text" class="form-group" name="title" required>
   </div>
   <div class="form-group">
-    <select name="category">
+    <select name="categorie">
     <option value="0" >Choisir une categorie</option>
     <?php foreach($categories as $categorie): ?>
-
-      <option> <?= $categorie ?> </option>
-
+    <option> <?= $categorie ?> </option>
     <?php endforeach ?>
-    </select></div>
+    </select>
+  </div>
     <div class="form-group">
       <select name="level">
       <option value="0" >Choisir un niveau de difficulte</option>
-        <option value="1">Facile</option>
-          <option value="2">Moyen</option>
-            <option value="3">Difficile</option>
-     </select></div>
-<input type="submit" class="btn btn-primary" value="Enregistrer" name="submit">
+      <option value="1">Facile</option>
+      <option value="2">Moyen</option>
+      <option value="3">Difficile</option>
+      </select>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Enregistrer" name="submit">
 </form>
