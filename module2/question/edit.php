@@ -17,7 +17,7 @@ $question =$query -> fetch(PDO::FETCH_OBJ);//renvoie un objet
      <input  value="<?= $question->title ?>"type="text" class="form-group" name="title" required>
    </div>
    <div class="form-group">
-     <select name="category">
+     <select name="categorie">
      <option value="0" >Choisir une categorie</option>
      <?php foreach($categories as $categorie): ?>
      <?php if($question->categorie  ==  $categorie): ?>
